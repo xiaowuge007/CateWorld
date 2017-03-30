@@ -1,0 +1,18 @@
+<ion-view>
+	<ion-header-bar>
+		<button class="button button-icon icon ion-chevron-left" ng-click="$ionicGoBack()"></button>
+		<h1 class="title">完善资料</h1>
+		<a class="button button-clear button-dark" ng-click="show3()"
+			id= "end-btn">完成</a>
+	</ion-header-bar>
+	<ion-content class="has-header art">
+		<div class="list">
+			<label class="item item-input">
+			    <input type="password" ng-model="$parent.password" placeholder="设置密码">
+			 </label>
+			<label class="item item-input">
+			    <input type="text" placeholder="填写昵称">
+			 </label>			
+		</div>
+	</ion-content>
+</ion-view>

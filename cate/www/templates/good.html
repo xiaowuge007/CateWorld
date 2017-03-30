@@ -1,0 +1,126 @@
+<ion-view>
+	<div class="bar bar-header">
+		<span class="car-num">1</span>
+		<h1 class="title">购好货</h1>
+		<a class="button button-icon icon ion-ios-search-strong"></a>
+		<a class="button button-icon icon ion-ios-cart-outline"
+			href="#/tab/car"></a>
+	</div>
+	<ion-content class="has-header art">
+		<div class="list list-inset good-input">
+			<label class="item item-input">
+			    <i class="icon ion-search placeholder-icon"></i>
+			    <input type="text" placeholder="搜索商品">
+			</label>
+		</div>
+		<div class="swiper-container gbanner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="../img/gb1.jpg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/gb2.jpg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/gb3.jpg" alt="" />
+				</div>
+			</div>
+
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="good-nav">
+			<ul>
+				<li ng-repeat="gnav in gnavs">
+					<img src="{{gnav.imgUrl}}" alt="" />
+					<p><span>{{gnav.name}}</span></p>
+				</li>
+			</ul>
+		</div>
+		<div class="rob">
+			<h4 class="goodtitle">
+				<span>|</span>抢购专区<span>距离本场结束</span>
+			</h4>
+			<div>
+				<dl>
+					<dt><img src="../img/rimg/1.jpg" alt="" /></dt>
+					<dd>懒人汤料 纯天然野生桃胶250g 营养价值高</dd>
+					<dd>￥19.9</dd>
+					<dd>￥32</dd>
+					<dd></dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/rimg/2.jpg" alt="" /></dt>
+					<dd>妙可蓝多 马苏里拉芝士/奶酪450g</dd>
+					<dd>￥56</dd>
+					<dd>￥68</dd>
+					<dd></dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/rimg/3.jpg" alt="" /></dt>
+					<dd>舌尖上Honey 原生态新疆黑蜂山花蜂蜜 巢蜜 500g/盒</dd>
+					<dd>￥78</dd>
+					<dd>￥99</dd>
+					<dd></dd>
+				</dl>
+			</div>
+			<h5>下场预告10:00开抢</h5>
+		</div>
+		<div class="recommend">
+			<h4 class="goodtitle">
+				<span>|</span>为你推荐
+			</h4>
+			<div>
+				<dl>
+					<dt><img src="../img/rimg/4.jpg" alt="" /></dt>
+					<dd>烘焙原料一站购齐</dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/rimg/9.jpg" alt="" /></dt>
+					<dd>自然美肌吃出来</dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/rimg/6.jpg" alt="" /></dt>
+					<dd>时尚小炒</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="nice">
+			<h4 class="goodtitle">
+				<span>|</span> 必败专场
+			</h4>
+			<div>
+				<a href="#">
+					<img src="../img/banner2.jpg" alt="" />
+				</a>
+				<a href="#">
+					<img src="../img/gb2.jpg" alt="" />
+				</a>
+			</div>
+		</div>
+		<div class="g-goodslist">
+			<nav class="tabs g-good-nav">
+				<a class="tab-item active">
+					综合
+				</a>
+				<a class="tab-item">
+					销量
+				</a>
+				<a class="tab-item">
+					价格
+				</a>
+				<a class="tab-item">
+					新品
+				</a>
+			</nav>
+			<div class="g-goods">				
+				<dl ng-repeat="dl in dls">
+					<dt><a href="#/tab/good/{{dl.id}}"><img ng-src="{{dl.imgUrl}}" alt="" /></a></dt>
+					<dd><a style="color:#666; text-decoration: none;" href="#/tab/good/{{dl.id}}">{{dl.name}}</a></dd>
+					<dd>{{dl.price}}</dd>
+					<dd>{{dl.people}}人购买</dd>
+				</dl>				
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

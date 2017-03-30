@@ -1,0 +1,106 @@
+<ion-view title="首页">
+	<div class="bar bar-header">
+		<a class="button button-icon icon ion-android-apps"
+			href="#/tab/sort"></a>
+		<div class="title">
+			<div class="search">
+				<button id="btn"></button>
+				<input type="text" placeholder="菜谱、用户、商品" />
+			</div>
+		</div>
+		<a class="button button-icon icon ion-ios-bell-outline"></a>
+	</div>	
+	<ion-content class="has-header art">		
+		<div class="swiper-container banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="../img/banner1.jpg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/banner2.jpg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../img/banner3.jpeg" alt="" />
+				</div>
+			</div>
+			
+			<!-- 如果需要滚动条 -->
+			<div class="swiper-scrollbar" style="bottom:-3px;"></div>
+		</div>
+		<div class="_nav">
+			<div class="tabs tabs-icon-top">
+				<a class="tab-item" href="#/tab/sort">
+					<i class="icon ion-home"></i> 菜谱分类
+				</a>
+				<a class="tab-item">
+					<i class="icon ion-gear-a"></i> 热门榜
+				</a>
+				<a class="tab-item">
+					<i class="icon ion-star"></i> 秀美食
+				</a>
+				<a class="tab-item">
+					<i class="icon ion-gear-a"></i> 好友动态
+				</a>
+			</div>
+		</div>		
+		<div class="swiper-container home-arr">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="home-left moring">
+						<h4>今日早餐</h4>
+						<p>1856人记录</p>
+					</div>
+					<ul>
+						<li><img src="../img/home1.jpg" alt="" /></li>
+						<li><img src="../img/home2.jpg" alt="" /></li>
+					</ul>
+				</div>
+				<div class="swiper-slide">
+					<div class="home-left afternoon">
+						<h4>今日午餐</h4>
+						<p>2536人记录</p>
+					</div>
+					<ul>
+						<li><img src="../img/home3.jpg" alt="" /></li>
+						<li><img src="../img/home4.jpg" alt="" /></li>
+					</ul>
+				</div>
+				<div class="swiper-slide">
+					<div class="home-left dinner">
+						<h4>今日晚餐</h4>
+						<p>2225人记录</p>
+					</div>
+					<ul>
+						<li><img src="../img/home5.jpg" alt="" /></li>
+						<li><img src="../img/home6.jpg" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 如果需要滚动条 -->
+			<div class="swiper-scrollbar" style="bottom:-3px;"></div>
+		</div>
+		<div class="home-good">
+			<ul>
+				<li ng-repeat="hgood in hgoods">
+					<div>
+						<img src="{{hgood.imgUrl[0]}}" alt="" />
+					</div>
+					<div>
+						<img src="{{hgood.imgUrl[1]}}" alt="" />
+					</div>
+					<div>
+						<h4>{{hgood.goodName}}</h4>
+						<h5 style="line-height: 22px;">
+							<img src="{{hgood.imgUrl[2]}}" alt="" />
+							<span>{{hgood.userName}}</span>
+						</h5>
+						<p>
+							{{hgood.msg}}
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</ion-content>
+</ion-view>

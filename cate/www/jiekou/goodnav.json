@@ -1,0 +1,35 @@
+[
+	{
+		"id":0,
+		"name":"半成品",
+		"imgUrl":"../img/icon/食物.svg"
+	},{
+		"id":1,
+		"name":"粮油调味",
+		"imgUrl":"../img/icon/食物 (1).svg"
+	},{
+		"id":2,
+		"name":"烘焙美厨",
+		"imgUrl":"../img/icon/食物 (2).svg"
+	},{
+		"id":3,
+		"name":"休闲食品",
+		"imgUrl":"../img/icon/食物 (3).svg"
+	},{
+		"id":4,
+		"name":"精选生鲜",
+		"imgUrl":"../img/icon/食物 (4).svg"
+	},{
+		"id":5,
+		"name":"进口食品",
+		"imgUrl":"../img/icon/食物 (5).svg"
+	},{
+		"id":6,
+		"name":"酒水饮料",
+		"imgUrl":"../img/icon/食物 (6).svg"
+	},{
+		"id":7,
+		"name":"厨房电器",
+		"imgUrl":"../img/icon/热烫食物.svg"
+	}
+]

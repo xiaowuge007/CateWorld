@@ -1,0 +1,25 @@
+<ion-view>
+	<ion-header-bar>
+		<button class="button button-icon icon ion-chevron-left" ng-click="$ionicGoBack()"></button>
+		<h1 class="title">登录</h1>
+		<a class="button button-clear button-dark"
+			href="#/tab/sign">注册</a>
+	</ion-header-bar>
+	<ion-content class="has-header art">
+		<div class="list">
+			<label class="item item-input">
+			    <input type="text" ng-model="$parent.uname" placeholder="手机号/邮箱">
+			 </label>
+			<label class="item item-input">
+			    <input type="password" ng-model="$parent.upass" placeholder="密码">
+			 </label>
+			<lable class="item">
+				<a class="button button-block button-assertive"
+					ng-click="succeed()" id="reg-btn">
+	  				立即登录
+				</a>
+				<a>忘记密码？</a>
+			</lable>
+		</div>
+	</ion-content>
+</ion-view>

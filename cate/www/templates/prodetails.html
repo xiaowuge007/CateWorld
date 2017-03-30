@@ -1,0 +1,30 @@
+<ion-view>
+	<div class="bar bar-header">
+		<button class="button button-icon icon ion-chevron-left" ng-click="$ionicGoBack()">
+		</button>
+	</div>
+	<ion-content class="has-header">
+		<div class="home-good">
+			<ul>
+				<li>
+					<div>
+						<h4>{{progood.goodName}}</h4>
+						<h5 style="line-height: 22px;">
+							<img src="{{progood.imgUrl[2]}}" alt="" />
+							<span>{{progood.userName}}</span>
+						</h5>
+						<p>
+							{{progood.msg}}
+						</p>
+					</div>
+					<div>
+						<img src="{{progood.imgUrl[0]}}" alt="" />
+					</div>
+					<div>
+						<img src="{{progood.imgUrl[1]}}" alt="" />
+					</div>					
+				</li>
+			</ul>
+		</div>
+	</ion-content>
+</ion-view>
